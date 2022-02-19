@@ -25,7 +25,12 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-
+  // link to license section in readme
+  if (license) {
+    return `[License](#License)`
+  } else {
+    return ""
+  }
 }
 
 // TODO: Create a function that returns the license section of README
@@ -321,57 +326,45 @@ limitations under the License.
     case "MIT":
       return `
 Copyright ${date.getFullYear()} ${userName}
-
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
-`
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`
     default:
       return ""
   }
 }
-
-
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
   return `# ${answers.title}   
   ## Description   
   ${answers.description}   
+  ${renderLicenseBadge(answers.license)}   
+  
 
   ## Table of Contents   
-  [Installation](https://github.com/${answers.userName}/${answers.title}/blob/main/README.md#Installation)   
-
-  [Usage](https://github.com/${answers.userName}/${answers.title}/blob/main/README.md#Usage)   
-
-  [License](https://github.com/${answers.userName}/${answers.title}/blob/main/README.md#License)   
-
-  [Contributing](https://github.com/${answers.userName}/${answers.title}/blob/main/README.md#Contributing)   
-
-  [Tests](https://github.com/${answers.userName}/${answers.title}/blob/main/README.md#Tests)   
-
-  [Questions](https://github.com/${answers.userName}/${answers.title}/blob/main/README.md#Questions)    
+  ${answers.installInst === undefined ? "" : "* [Installation](#Installation)"}   
+  ${answers.usageInfo === undefined ? "" : "* [Usage](#Usage)"}   
+  * ${renderLicenseLink(answers.license)}   
+  ${answers.testInst === undefined ? "" : "* [Contributing](#Contributing)"}   
+  ${answers.testInst === undefined ? "" : "* [Tests](#Tests)"}   
+  * [Questions](#Questions)    
 
 
   
-  ## Installation   
-  ${answers.installInst}   
+  ${answers.installInst === undefined ? "" : "## Installation\n" + answers.installInst}   
 
-  ## Usage   
-  ${answers.usageInfo}   
-  
+  ${answers.usageInfo === undefined ? "" : "## Usage Information\n" + answers.usageInfo}   
+
   ## License   
-  ${answers.license}
-  ${renderLicenseBadge(answers.license)}
-  ${renderLicenseSection(answers.license, answers.userName)}
+  ${answers.license}   
+  ${renderLicenseSection(answers.license, answers.userName)}   
   
-  ## Contributing    
-  ${answers.contribGuidelines}    
+  ${answers.contribGuidelines === undefined ? "" : "## Contributing\n" + answers.contribGuidelines}  
 
-  ## Tests   
-  ${answers.testInst}   
+  ${answers.testInst === undefined ? "" : "## Tests\n" + answers.testInst}   
 
   ## Questions   
 
@@ -380,4 +373,4 @@ function generateMarkdown(answers) {
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = generateMarkdown; // could call another function

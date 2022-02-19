@@ -9,7 +9,7 @@ const questions = [
     {   // title
         type: "input",
         name: "title",
-        message: "What is your project title? (Required)",
+        message: "What is the name of the GitHub repo? (Required)",
         validate: (userInput) => {
             if (userInput) {
                 return true
@@ -21,7 +21,7 @@ const questions = [
     {   // description
         type: "input",
         name: "description",
-        message: "Please enter a description for your project:",
+        message: "Please enter a description for your project: (Required)",
         validate: (userInput) => {
             if (userInput) {
                 return true
@@ -30,10 +30,23 @@ const questions = [
             }
         }
     },
+    {
+        type: "confirm",
+        name: "confirmInstallInstructions",
+        message: "Does your project require installation instructions?",
+        default: true
+    },
     {   // installation instructions
         type: "input",
         name: "installInst",
-        message: "Does your project require specific installation instructions?",
+        message: "What are your project's installation instructions? (Required)",
+        when: ({ confirmInstallInstructions }) => {
+            if (confirmInstallInstructions) {
+                return true
+            } else {
+                return false
+            }
+        },
         validate: (userInput) => {
             if (userInput) {
                 return true
@@ -41,12 +54,25 @@ const questions = [
                 return false;
             }
         }
+    },
+    {   // usage information
+        type: "confirm",
+        name: "confirmUsageInstructions",
+        message: "Does your project require usage instructions?",
+        default: true
     },
     {
         // usage information
         type: "input",
         name: "usageInfo",
-        message: "What is your project's usage information?",
+        message: "What is your project's usage information? (Required)",
+        when: ({ confirmUsageInstructions }) => {
+            if (confirmUsageInstructions) {
+                return true
+            } else {
+                return false
+            }
+        },
         validate: (userInput) => {
             if (userInput) {
                 return true
@@ -54,12 +80,25 @@ const questions = [
                 return false;
             }
         }
+    },
+    {
+        type: "confirm",
+        name: "confirmContribGuidelines",
+        message: "Does your project require contribution guidelines?",
+        default: true
     },
     {
         // contribution guidelines
         type: "input",
         name: "contribGuidelines",
-        message: "What is your project's contribution guidelines?",
+        message: "What are your project's contribution guidelines? (Required)",
+        when: ({ confirmContribGuidelines }) => {
+            if (confirmContribGuidelines) {
+                return true
+            } else {
+                return false
+            }
+        },
         validate: (userInput) => {
             if (userInput) {
                 return true
@@ -68,11 +107,24 @@ const questions = [
             }
         }
     },
+    {   // test instructions
+        type: "confirm",
+        name: "confirmTestInstructions",
+        message: "Does your project require test instructions?",
+        default: true
+    },
     {
         // test instructions
         type: "input",
         name: "testInst",
-        message: "What are your project's test instructions?",
+        message: "What are your project's test instructions? (Required)",
+        when: ({ confirmTestInstructions }) => {
+            if (confirmTestInstructions) {
+                return true
+            } else {
+                return false
+            }
+        },
         validate: (userInput) => {
             if (userInput) {
                 return true
@@ -86,13 +138,13 @@ const questions = [
         type: "list",
         name: "license",
         message: "Please choose a license from the list of options:",
-        choices: ["MIT", "Creative Commons", "Apache 2.0"]
+        choices: ["MIT", "Creative Commons", "Apache 2.0", "None"]
     },
     {
         // enter my GitHub username
         type: "input",
         name: "userName",
-        message: "What is your GitHub username?",
+        message: "What is your GitHub username? (Required)",
         validate: (userInput) => {
             if (userInput) {
                 return true
@@ -105,7 +157,7 @@ const questions = [
         // email address
         type: "input",
         name: "userEmail",
-        message: "What is your email address?",
+        message: "What is your email address? (Required)",
         validate: (userInput) => {
             if (userInput) {
                 return true
@@ -139,10 +191,10 @@ function getUserInfo() {
     return inquirer.prompt(
         questions
     ).then((answers) => {
-        console.log(answers)
+        //console.log(answers)
         return generateMarkdown(answers)
     }).then(readmePage => {
-        console.log(readmePage)
+        //console.log(readmePage)
         writeToFile('./dist/readme.md', readmePage, err => {
             if (err) throw err;
         })
