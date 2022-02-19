@@ -140,17 +140,15 @@ function getUserInfo() {
         questions
     ).then((answers) => {
         console.log(answers)
-        // console.log(generateMarkdown(answers))
         return generateMarkdown(answers)
     }).then(readmePage => {
         console.log(readmePage)
-        writeToFile('readme1.md', readmePage, err => {
+        writeToFile('./dist/readme.md', readmePage, err => {
             if (err) throw err;
         })
     }).catch((error) => {
         console.log(error)
     })
-
 }
 
 // TODO: Create a function to initialize app
