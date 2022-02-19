@@ -1,30 +1,33 @@
-# yt   
+# readme generator   
   ## Description   
-  yuyttrr   
+  create a custom readme   
 
   ## Table of Contents   
-  [Installation](https://github.com/nitrotap/easy-readme/blob/main/README.md#Installation)   
+  [Installation](https://github.com/nitrotap/readme generator/blob/main/README.md#Installation)   
 
-  [Usage](https://github.com/nitrotap/easy-readme/blob/main/README.md#Usage)   
+  [Usage](https://github.com/nitrotap/readme generator/blob/main/README.md#Usage)   
 
-  [License](https://github.com/nitrotap/easy-readme/blob/main/README.md#License)   
+  [License](https://github.com/nitrotap/readme generator/blob/main/README.md#License)   
 
-  [Contributing](https://github.com/nitrotap/easy-readme/blob/main/README.md#Contributing)   
+  [Contributing](https://github.com/nitrotap/readme generator/blob/main/README.md#Contributing)   
 
-  [Tests](https://github.com/nitrotap/easy-readme/blob/main/README.md#Tests)   
+  [Tests](https://github.com/nitrotap/readme generator/blob/main/README.md#Tests)   
 
-  [Questions](https://github.com/nitrotap/easy-readme/blob/main/README.md#Questions)    
+  [Questions](https://github.com/nitrotap/readme generator/blob/main/README.md#Questions)    
 
 
   
   ## Installation   
-  ytyu   
+  uses node js and inquirer   
 
   ## Usage   
-  y   
+  usage info   
   
   ## License   
   Apache 2.0
+  
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+      
   
 Apache License
 Version 2.0, January 2004
@@ -203,7 +206,7 @@ of your accepting any such warranty or additional liability.
 
 END OF TERMS AND CONDITIONS
 
-Copyright 2022 wetr
+Copyright 2022 nitrotap
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -219,12 +222,12 @@ limitations under the License.
       
   
   ## Contributing    
-  y    
+  no one can contribute    
 
   ## Tests   
-  tr   
+  no tests so far   
 
   ## Questions   
 
-  Please reach out to me on [GitHub](https://github.com/wetr) or by email at wer for any additional questions.   
+  Please reach out to me on [GitHub](https://github.com/nitrotap) or by email at kartikinpublic@gmail.com for any additional questions.   
 
