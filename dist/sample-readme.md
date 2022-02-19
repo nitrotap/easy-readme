@@ -1,6 +1,6 @@
 # sample-github-repo-name   
   ## Description   
-  sample description is a required field   
+  sample description is a required field     
   
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
    
@@ -9,24 +9,25 @@
   ## Table of Contents   
   * [Installation](#Installation)   
   * [Usage](#Usage)   
-  * [License](#License)   
   * [Contributing](#Contributing)   
   * [Tests](#Tests)   
   * [Questions](#Questions)    
+  * [License](#License)   
+
 
 
   
   ## Installation
-sample project installation instructions is required if yes is chosen   
+sample project installation instructions is required if yes is chosen      
 
   ## Usage Information
-sample project usage information is required if yes is chosen   
+sample project usage information is required if yes is chosen         
   
   ## Contributing
-sample project contribution guidelines is required if yes is chosen  
+sample project contribution guidelines is required if yes is chosen    
 
   ## Tests
-sample project test instructions is required if yes is chosen   
+sample project test instructions is required if yes is chosen        
 
   ## Questions   
 
@@ -40,4 +41,5 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.   
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+

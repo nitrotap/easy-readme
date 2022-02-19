@@ -27,7 +27,7 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   // link to license section in readme
   if (license) {
-    return `[License](#License)`
+    return `* [License](#License)`
   } else {
     return ""
   }
@@ -347,16 +347,17 @@ function generateMarkdown(answers) {
   ## Table of Contents   
   ${answers.installInst === undefined ? "" : "* [Installation](#Installation)"}   
   ${answers.usageInfo === undefined ? "" : "* [Usage](#Usage)"}   
-  * ${renderLicenseLink(answers.license)}   
-  ${answers.testInst === undefined ? "" : "* [Contributing](#Contributing)"}   
+  ${answers.contribGuidelines === undefined ? "" : "* [Contributing](#Contributing)"}   
   ${answers.testInst === undefined ? "" : "* [Tests](#Tests)"}   
   * [Questions](#Questions)    
+  ${renderLicenseLink(answers.license)}   
+
 
 
   
   ${answers.installInst === undefined ? "" : "## Installation\n" + answers.installInst}   
 
-  ${answers.usageInfo === undefined ? "" : "## Usage Information\n" + answers.usageInfo}   
+  ${answers.usageInfo === undefined ? "" : "## Usage Information\n" + answers.usageInfo}     
   
   ${answers.contribGuidelines === undefined ? "" : "## Contributing\n" + answers.contribGuidelines}  
 
@@ -368,7 +369,8 @@ function generateMarkdown(answers) {
 
   ## License   
   ${answers.license}   
-  ${renderLicenseSection(answers.license, answers.userName)}   
+  ${renderLicenseSection(answers.license, answers.userName)} 
+
 `;
 }
 
