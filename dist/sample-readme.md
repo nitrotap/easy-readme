@@ -1,13 +1,13 @@
-# easy-readme   
+# sample-github-repo-name   
   ## Description   
-  a readme maker   
+  sample description to include project information   
   
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
    
   
 
   ## Table of Contents   
-     
+  * [Installation](#Installation)   
      
   * [License](#License)   
      
@@ -16,7 +16,8 @@
 
 
   
-     
+  ## Installation
+sample installation instructions can be entered here   
 
      
 
@@ -36,5 +37,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
   ## Questions   
 
-  Please reach out to me on [GitHub](https://github.com/nitrotap) or by email at email@email.com for any additional questions.   
+  Please reach out to me on [GitHub](https://github.com/nitrotap) or by email at kartikinpublic@gmail.com for any additional questions.   
 
