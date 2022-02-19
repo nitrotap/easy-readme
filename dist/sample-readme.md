@@ -1,6 +1,6 @@
 # sample-github-repo-name   
   ## Description   
-  sample description to include project information   
+  sample description is a required field   
   
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
    
@@ -8,18 +8,29 @@
 
   ## Table of Contents   
   * [Installation](#Installation)   
-     
+  * [Usage](#Usage)   
   * [License](#License)   
-     
-     
+  * [Contributing](#Contributing)   
+  * [Tests](#Tests)   
   * [Questions](#Questions)    
 
 
   
   ## Installation
-sample installation instructions can be entered here   
+sample project installation instructions is required if yes is chosen   
 
-     
+  ## Usage Information
+sample project usage information is required if yes is chosen   
+  
+  ## Contributing
+sample project contribution guidelines is required if yes is chosen  
+
+  ## Tests
+sample project test instructions is required if yes is chosen   
+
+  ## Questions   
+
+  Please reach out to me on [GitHub](https://github.com/nitrotap) or by email at kartikinpublic@gmail.com for any additional questions.   
 
   ## License   
   MIT   
@@ -30,12 +41,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.   
-  
-    
-
-     
-
-  ## Questions   
-
-  Please reach out to me on [GitHub](https://github.com/nitrotap) or by email at kartikinpublic@gmail.com for any additional questions.   
-

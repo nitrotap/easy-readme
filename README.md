@@ -11,6 +11,7 @@ Easy Readme is a command-line app using node.js, npm, and inquirer. The CLI walk
 - [Installation](#installation)
 - [Usage](#usage)
 - [Walk-through Video](#Walk-through)
+- [Screen Shots](#screen-shots)
 - [License](#License)
 
 ## Installation
@@ -33,11 +34,11 @@ node index.js
 
 ## Screen Shots
 
-<img src="./assets/images/cli-screen-shot.png" width="50%" height="50%">
+<img src="./assets/images/cli-screen-shot-2.png" width="50%" height="50%">
 
 ### [Sample Readme](./dist/sample-readme.md)
 
-<img src="./assets/images/readme-screen-shot.png" width="25%" height="20%">
+<img src="./assets/images/readme-screen-shot-2.png" width="25%" height="20%">
 
 <br />
 

@@ -357,10 +357,6 @@ function generateMarkdown(answers) {
   ${answers.installInst === undefined ? "" : "## Installation\n" + answers.installInst}   
 
   ${answers.usageInfo === undefined ? "" : "## Usage Information\n" + answers.usageInfo}   
-
-  ## License   
-  ${answers.license}   
-  ${renderLicenseSection(answers.license, answers.userName)}   
   
   ${answers.contribGuidelines === undefined ? "" : "## Contributing\n" + answers.contribGuidelines}  
 
@@ -370,6 +366,9 @@ function generateMarkdown(answers) {
 
   Please reach out to me on [GitHub](https://github.com/${answers.userName}) or by email at ${answers.userEmail} for any additional questions.   
 
+  ## License   
+  ${answers.license}   
+  ${renderLicenseSection(answers.license, answers.userName)}   
 `;
 }
 
