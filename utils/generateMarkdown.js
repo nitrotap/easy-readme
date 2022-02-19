@@ -17,6 +17,12 @@ function generateMarkdown(answers) {
   ${answers.description}   
 
   ## Table of Contents   
+  [Installation](https://github.com/nitrotap/easy-readme/blob/main/README.md#Installation)
+  [Usage](https://github.com/nitrotap/easy-readme/blob/main/README.md#Usage)
+  [License](https://github.com/nitrotap/easy-readme/blob/main/README.md#License)
+  [Contributing](https://github.com/nitrotap/easy-readme/blob/main/README.md#Contributing)
+  [Tests](https://github.com/nitrotap/easy-readme/blob/main/README.md#Tests)
+  [Questions](https://github.com/nitrotap/easy-readme/blob/main/README.md#Questions)
 
   
   ## Installation   
@@ -34,7 +40,9 @@ function generateMarkdown(answers) {
   ## Tests   
   ${answers.testInst}   
 
-  ## Questions
+  ## Questions   
+
+  Please reach out to me on [GitHub](https://github.com/${answers.userName}) or by email at ${answers.userEmail} for any additional questions.   
 
 `;
 }
