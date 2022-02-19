@@ -28,8 +28,6 @@ node index.js
 
 ## Walk-through
 
-<iframe src="https://drive.google.com/file/d/1GOrqbDBDDhmLev32BxSA7jTfq8CSXPIE/preview" width="640" height="480" allow="autoplay"></iframe>
-
 [Walk-through Video](https://drive.google.com/file/d/1GOrqbDBDDhmLev32BxSA7jTfq8CSXPIE/view)
 
 ## Screen Shots
