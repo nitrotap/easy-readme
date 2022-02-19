@@ -17,7 +17,7 @@ Easy Readme is a command-line app using node.js, npm, and inquirer. The CLI walk
 
 Node.js is required. Download from GitHub and navigate to the extracted downloaded folder from your terminal.
 
-## Usage Information
+## Usage
 
 The application is started with the following command:
 
