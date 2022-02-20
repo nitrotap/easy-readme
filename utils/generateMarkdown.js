@@ -341,7 +341,7 @@ function generateMarkdown(answers) {
   return `# ${answers.title}   
   ## Description   
   ${answers.description}   
-  ${renderLicenseBadge(answers.license)}   
+  ${renderLicenseBadge(answers.license)} ${answers.languageBadge === "No" ? "" : `![badmath](https://img.shields.io/github/languages/top/${answers.userName}/${answers.title})`}   
   
 
   ## Table of Contents   

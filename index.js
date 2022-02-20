@@ -165,6 +165,21 @@ const questions = [
                 return false;
             }
         }
+    },
+    {
+        // language badge
+        type: "list",
+        name: "languageBadge",
+        message: "Would you like to include a language badge?",
+        choices: ["Yes", "No"],
+        default: "Yes",
+        validate: (userInput) => {
+            if (userInput) {
+                return true
+            } else {
+                return false;
+            }
+        }
     }
 ];
 
@@ -191,7 +206,7 @@ function getUserInfo() {
     return inquirer.prompt(
         questions
     ).then((answers) => {
-        //console.log(answers)
+        console.log(answers)
         return generateMarkdown(answers)
     }).then(readmePage => {
         //console.log(readmePage)
