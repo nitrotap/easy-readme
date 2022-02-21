@@ -40,13 +40,16 @@ node index.js
 
 <br />
 
+<img src="./assets/images/easy-readme-walkthrough.gif" width="100%" height="100%">
+
+<br />
+
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-MIT
-
-Copyright 2022 Kartik Jevaji
+MIT  
+Copyright 2022 Kartik Jevaji  
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
