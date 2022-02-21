@@ -1,9 +1,9 @@
-# sample-github-repo-name   
+# easy-readme   
   ## Description   
-  sample description is a required field     
+  sample project description   
   
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-   
+ ![badmath](https://img.shields.io/github/languages/top/nitrotap/easy-readme)   
   
 
   ## Table of Contents   
@@ -18,16 +18,16 @@
 
   
   ## Installation
-sample project installation instructions is required if yes is chosen      
+sample installation instructions   
 
   ## Usage Information
-sample project usage information is required if yes is chosen         
+sample usage information     
   
   ## Contributing
-sample project contribution guidelines is required if yes is chosen    
+sample contribution guidelines  
 
   ## Tests
-sample project test instructions is required if yes is chosen        
+sample test instructions   
 
   ## Questions   
 

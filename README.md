@@ -28,7 +28,7 @@ node index.js
 
 ## Walk-through
 
-[Walk-through Video](https://drive.google.com/file/d/1GOrqbDBDDhmLev32BxSA7jTfq8CSXPIE/view)
+[Walk-through Video](https://drive.google.com/file/d/1WGeXKoo0O8L_7hUmfGvxgXx_TBSG74jv/view)
 
 ## Screen Shots
 
