@@ -357,7 +357,7 @@ function generateMarkdown(answers) {
   
   ${answers.installInst === undefined ? "" : "## Installation\n" + answers.installInst}   
 
-  ${answers.usageInfo === undefined ? "" : "## Usage Information\n" + answers.usageInfo}     
+  ${answers.usageInfo === undefined ? "" : "## Usage\n" + answers.usageInfo}     
   
   ${answers.contribGuidelines === undefined ? "" : "## Contributing\n" + answers.contribGuidelines}  
 
