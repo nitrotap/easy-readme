@@ -338,38 +338,45 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
-  return `# ${answers.title}   
-  ## Description   
-  ${answers.description}   
-  ${renderLicenseBadge(answers.license)} ${answers.languageBadge === "No" ? "" : `![badmath](https://img.shields.io/github/languages/top/${answers.userName}/${answers.title})`}   
+  return `
+# ${answers.title} 
+## Description 
+${answers.description} 
+${renderLicenseBadge(answers.license)} ${answers.languageBadge === "No" ? "" :
+      `![badmath](https://img.shields.io/github/languages/top/${answers.userName}/${answers.title})
+![badmath](https://img.shields.io/github/languages/top/${answers.userName}/${answers.title})   
+![badmath](https://img.shields.io/github/issues/${answers.userName}/${answers.title}) 
+![badmath](https://img.shields.io/github/forks/${answers.userName}/${answers.title})   
+![badmath](https://img.shields.io/github/stars/${answers.userName}/${answers.title})  
+`}   
   
 
-  ## Table of Contents   
-  ${answers.installInst === undefined ? "" : "* [Installation](#Installation)"}   
-  ${answers.usageInfo === undefined ? "" : "* [Usage](#Usage)"}   
-  ${answers.contribGuidelines === undefined ? "" : "* [Contributing](#Contributing)"}   
-  ${answers.testInst === undefined ? "" : "* [Tests](#Tests)"}   
-  * [Questions](#Questions)    
-  ${renderLicenseLink(answers.license)}   
+## Table of Contents   
+${answers.installInst === undefined ? "" : "* [Installation](#Installation)"}   
+${answers.usageInfo === undefined ? "" : "* [Usage](#Usage)"}   
+${answers.contribGuidelines === undefined ? "" : "* [Contributing](#Contributing)"}   
+${answers.testInst === undefined ? "" : "* [Tests](#Tests)"}   
+* [Questions](#Questions)    
+${renderLicenseLink(answers.license)}   
 
 
 
   
-  ${answers.installInst === undefined ? "" : "## Installation\n" + answers.installInst}   
+${answers.installInst === undefined ? "" : "## Installation\n" + answers.installInst}   
 
-  ${answers.usageInfo === undefined ? "" : "## Usage\n" + answers.usageInfo}     
+${answers.usageInfo === undefined ? "" : "## Usage\n" + answers.usageInfo}     
   
-  ${answers.contribGuidelines === undefined ? "" : "## Contributing\n" + answers.contribGuidelines}  
+${answers.contribGuidelines === undefined ? "" : "## Contributing\n" + answers.contribGuidelines}  
 
-  ${answers.testInst === undefined ? "" : "## Tests\n" + answers.testInst}   
+${answers.testInst === undefined ? "" : "## Tests\n" + answers.testInst}   
 
-  ## Questions   
+## Questions   
 
-  Please reach out to me on [GitHub](https://github.com/${answers.userName}) or by email at ${answers.userEmail} for any additional questions.   
+Please reach out to me on [GitHub](https://github.com/${answers.userName}) or by email at ${answers.userEmail} for any additional questions.   
 
-  ## License   
-  ${answers.license}   
-  ${renderLicenseSection(answers.license, answers.userName)} 
+## License   
+${answers.license}   
+${renderLicenseSection(answers.license, answers.userName)} 
 
 `;
 }
