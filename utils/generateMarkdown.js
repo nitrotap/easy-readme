@@ -343,8 +343,8 @@ function generateMarkdown(answers) {
 ## Description 
 ${answers.description} 
 ${renderLicenseBadge(answers.license)} ${answers.languageBadge === "No" ? "" :
-      `![badmath](https://img.shields.io/github/languages/top/${answers.userName}/${answers.title})
-![badmath](https://img.shields.io/github/languages/top/${answers.userName}/${answers.title})   
+      `<br />
+![badmath](https://img.shields.io/github/languages/top/${answers.userName}/${answers.title})
 ![badmath](https://img.shields.io/github/issues/${answers.userName}/${answers.title}) 
 ![badmath](https://img.shields.io/github/forks/${answers.userName}/${answers.title})   
 ![badmath](https://img.shields.io/github/stars/${answers.userName}/${answers.title})  
